@@ -4,7 +4,6 @@ import * as path from 'path';
 export default defineConfig({
   e2e: {
     baseUrl: 'https://booking.com',
-    supportFile: false,
     setupNodeEvents(on, config) {
       const mochawesome = require('mochawesome');
 
@@ -25,7 +24,7 @@ export default defineConfig({
       });
     },
     specPattern: 'cypress/e2e/**/*.cy.{js,ts}',
-    supportFile: 'cypress/support/index.ts',
+    supportFile: false,
     video: true,
     reporter: 'mochawesome',
     reporterOptions: {
