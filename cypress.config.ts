@@ -4,6 +4,7 @@ import * as path from 'path';
 export default defineConfig({
   e2e: {
     baseUrl: 'https://booking.com',
+    supportFile: false,
     setupNodeEvents(on, config) {
       const mochawesome = require('mochawesome');
 
