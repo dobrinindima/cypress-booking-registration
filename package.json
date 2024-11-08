@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cypress run"
+    "start": "cypress run",
+    "test": "cypress open"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
     "@types/mocha": "^10.0.9",
     "@types/node": "^22.9.0",
     "cypress": "^13.15.2",
+    "mochawesome": "^6.0.1",
     "typescript": "^5.6.3"
   }
 }
